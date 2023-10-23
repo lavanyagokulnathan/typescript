@@ -28,3 +28,14 @@ interface Contact  {
 }
 type AddressableContact = Contact & Address
 
+// Most popular usage of type is to replace enum
+
+//enum ContactStatus {
+   // Active: "active",
+  // Inactive: "inactive",
+ // New: "new"   
+//}
+
+type ContactStatus = "active" | "inactive" | "new"
+
+
